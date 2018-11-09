@@ -56,7 +56,7 @@ module.exports = (function () {
     function getAttributes(tag) {
         let running = true;
         const attributes = [];
-        const regexp = /(\S+)=["']?((?:.(?!["']?\s+(?:\S+)=|[>"']))+.)["']?/g;
+        const regexp = /(\S+)=["']?((?:.(?!["']?\s+(?:\S+)=|["']))+.)["']?/g;
 
         while (running) {
             const match = regexp.exec(tag);
